@@ -775,7 +775,7 @@ meltano run tap-gitlab target-postgres
 If everything was configured correctly, you should now see your data flow from your source into your destination! Check your postgres instance for the tables `warehouse.schema.commits` and `warehouse.schema.tags`.
 
 If the command failed, but it's not obvious how to resolve the issue, consider enabling [debug mode](/reference/command-line-interface#debugging) to get some more insight into what's going on behind the scenes.
-If that doesn't get you closer to a solution, learn how to [get help with your issue](/the-project/community).
+If that doesn't get you closer to a solution, come see us on [Slack](https://meltano.com/slack).
 
 If you run `meltano run` at another time, it will automatically pick up where the previous run left off, assuming the extractor supports [incremental replication](/guide/integration#incremental-replication-state) and you have an active environment.
 Behind the scenes Meltano is tracking state using a State ID that's auto-generated based on the extractor name, loader name, and active environment name.
@@ -910,7 +910,6 @@ schedules:
 Once your raw data has arrived in your data warehouse, its schema will likely need to be transformed to be more appropriate for analysis.
 
 To help you achieve this, Meltano supports transformation using [`dbt`](https://www.getdbt.com/).
-If you already have an existing dbt project that you'd like to migrate to Meltano, check out the [existing dbt project guide](https://docs.meltano.com/guide/existing-dbt-project) for more details.
 
 To learn about data transformation, refer to the [Data Transformation (T) guide](/guide/transformation).
 `dbt` plugins are adapter specific so you should install the plugin that matches your warehouse (i.e. Postgres = `dbt-postgres`, Snowflow = `dbt-snowflake`, etc.).
