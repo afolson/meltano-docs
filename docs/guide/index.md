@@ -17,5 +17,4 @@ toc: false
   {% for doc in site.guide %}
     <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
   {% endfor %}
-</ul>
- -->
+</ul> -->

@@ -3,6 +3,7 @@ title: Documentation Development
 description: Meltano is open source software built by a growing team and a community of contributors.
 layout: doc
 weight: 10
+hidden: true
 ---
 
 ## Documentation Structure
@@ -16,7 +17,7 @@ We recognize that not everything will fall into the four categories and welcome 
 
 Follow the steps below to work locally with this project.
 
-1. Make sure you have a Ruby environment set up locally. You'll need the Ruby version specified in the `.gitlab-ci.yml` file.
+1. Make sure you have a Ruby environment set up locally.
 1. Fork, clone or download this project.
 1. Install ruby dependencies: `bundle install`
 1. Install node dependencies: `npm install`

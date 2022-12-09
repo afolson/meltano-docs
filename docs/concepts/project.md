@@ -5,8 +5,6 @@ layout: doc
 weight: 1
 ---
 
-TODO: Fix front matter/sidebar
-
 <!-- The following is reproduced in docs/src/README.md#meltano-init -->
 
 At the core of the Meltano experience is your Meltano project,

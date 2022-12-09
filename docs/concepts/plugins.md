@@ -7,8 +7,6 @@ redirect_from:
 weight: 2
 ---
 
-TODO: Fix front matter/redirects
-
 Meltano takes a modular approach to data engineering in general and EL(T) in particular,
 where your [project](project) and pipelines are composed of plugins of [different types](#types), most notably
 [**extractors**](#extractors) ([Singer](https://singer.io) taps),

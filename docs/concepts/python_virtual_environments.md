@@ -4,9 +4,6 @@ description: What are Python Virtual Environments? Why should I care? How do I u
 layout: doc
 weight: 12
 ---
-
-TODO: Fix frontmatter
-
 # What are Python Virtual Environments
 
 Python Virtual Environments, also known as a venv, are a way to allow a

@@ -5,9 +5,6 @@ layout: doc
 weight: 3
 ---
 
-TODO: Fix front matter/weight in the sidebar
-TODO: Document how to manage the sidebar now that we don't need weights.
-
 As part of Meltano's vision to enable data teams to operate with best practices, **Environments** allows
 you to define custom layers of configuration within your project. That way, You can run the same commands against multiple environments,
 by passing a single environment variable or CLI option.

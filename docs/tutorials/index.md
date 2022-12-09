@@ -13,8 +13,6 @@ toc: false
 
 Here you will find a series of step-by-step tutorials where we help walk you through various scenarios.
 
-
-<!-- TODO: Get rid of these -->
 <!-- <ul>
   {% for doc in site.tutorials %}
     <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>

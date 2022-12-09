@@ -1,11 +1,11 @@
 ---
-title: Installation
+title: In-depth Installation
 description: Learn how to install Meltano locally with Linux, macOS, Windows, or Docker.
 layout: doc
-weight: 1
+weight: 2
 ---
 
-If the installation instructions in the [Getting Started guide](/getting-started#install-meltano) did not work on your environment, or if you'd like to learn more about how to manage your Meltano installation, you've come to the right place.
+This document will get you up and running with Meltano in-depth. There is also a [short install guide for first-time Meltano users](/getting-started/installation).
 
 <div class="notification is-success">
     <p><strong>Short on time, or just curious what the fuss is about?</strong> Watch the <a href="https://www.youtube.com/watch?v=sL3RvXZOTvE">"0 to DataOps" speedrun</a> to get a sense of the Meltano experience in just a few minutes!</p>
@@ -71,6 +71,10 @@ Once the installation completes, you can check if it was successful by running:
 ```bash
 meltano --version
 ```
+
+### Optional Components
+
+Some components of Meltano are optional and not installed by default. See the guide on [installing optional components](/guide/advanced-topics#installing-optional-components) for more information.
 
 ### Next Steps
 
@@ -148,7 +152,7 @@ Now that you've installed Meltano and its requirements, you can continue setting
 
 ### Using Pre-built Docker Images
 
-We maintain the [`meltano/meltano`](https://hub.docker.com/r/meltano/meltano) Docker image on DockerHub, which comes with Python and Meltano pre-installed.
+We maintain the [`meltano/meltano`](https://hub.docker.com/r/meltano/meltano) Docker image on Docker Hub, which comes with Python and Meltano pre-installed.
 
 To get the latest version of Meltano, pull the `latest` tag. Images for specific versions of Meltano are tagged `v<X.Y.Z>`, e.g. `v1.55.0`.
 
@@ -186,17 +190,6 @@ Then you can `cd` into your new project:
 cd yourprojectname
 ```
 
-We can then start the Meltano UI. Since `ui` is the default command, we can omit it.
-
-```bash
-docker run -v "$(pwd)":/project \
-             -w /project \
-             -p 5000:5000 \
-             meltano/meltano
-```
-
-You can now visit [http://localhost:5000](http://localhost:5000) to access the Meltano UI.
-
 Now that you're successfully running Meltano, you can continue setting up your Meltano project by following the [Getting Started guide](/getting-started).
 
 Note that wherever you are asked to run the `meltano` command, you will want to run it through `docker run` as in the snippet above.
@@ -205,7 +198,7 @@ Note that wherever you are asked to run the `meltano` command, you will want to 
 # Troubleshooting Installation
 
 <div class="notification is-info">
-  <p>Are you having installation or deployment problems? We are here to help you. Check out <a href="/">Getting Help</a> on the different ways to get in touch with us.</p>
+  <p>Are you having installation or deployment problems? We are here to help you. Check out <a href="/#get-help">Getting Help</a> on the different ways to get in touch with us.</p>
 </div>
 
 ## Upgrading Meltano Version
@@ -219,15 +212,3 @@ You can update Meltano to the latest version by running the following command in
 ```
 meltano upgrade
 ```
-
-## Using Meltano UI
-
-When an update is available, you will be informed of this automatically through a shiny blue button in the top right corner of Meltano UI:
-
-![Update Available Message](images/installation/update-available.png)
-
-Clicking this button will show more information and give you the option to install the update right away:
-
-![Update Available Popup](images/installation/update-available-popup.png)
-
-The Meltano UI will refresh automatically once installation is complete.

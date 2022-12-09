@@ -19,7 +19,7 @@ There are multiple ways to contribute to Meltano:
 
 - [The Meltano Project](https://github.com/meltano/meltano/) - Suggest new features for Meltano, report bugs, or open Pull Requests to fix issues.
 - [Meltano SDK](https://sdk.meltano.com/en/latest/) for Taps and Targets
-- [Plugins, taps/targets](contribute/plugins) or adding taps/targets to [MeltanoHub](https://hub.meltano.com) - If you've made a tap, target, or other plugin, you can add it to the MeltanoHub for others to discover and use.
+- [Plugins, taps/targets](/contribute/plugins) or adding taps/targets to [MeltanoHub](https://hub.meltano.com) - If you've made a tap, target, or other plugin, you can add it to the MeltanoHub for others to discover and use.
 - [Documentation](https://docs.meltano.com/)
 - [Tutorials](https://docs.meltano.com/tutorials/) and [Blog Posts](https://meltano.com/blog)
 - Helping on [Slack](https://meltano.com/slack)
