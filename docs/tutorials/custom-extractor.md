@@ -31,7 +31,7 @@ reusable sample code.
 
 ## Add the Plugin to Your Meltano Project
 
-Meltano exposes each plugin configuration in the plugin definition, located in the [`meltano.yml` project file](/concepts/project#meltano-yml-project-file).
+Meltano exposes each plugin configuration in the plugin definition, located in the [`meltano.yml` project file](/concept/projects#meltano-yml-project-file).
 
 To test the plugin as part of your Meltano project, you will need to add your plugin configuration in the `meltano.yml` file for your project.
 

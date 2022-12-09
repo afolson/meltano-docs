@@ -5,7 +5,7 @@ layout: doc
 weight: 3
 ---
 
-Meltano is responsible for managing the configuration of all of a [project](/concepts/project)'s [plugins](/concepts/plugins).
+Meltano is responsible for managing the configuration of all of a [project's](/concepts/project) [plugins](/concepts/plugins).
 It knows what settings are supported by each plugin, and how and when different types of plugins expect to be fed that configuration.
 
 Since this also goes for [extractors](/concepts/plugins#extractors) and [loaders](/concepts/plugins#loaders), you do not need to manually craft the
